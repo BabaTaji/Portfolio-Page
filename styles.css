@@ -72,11 +72,11 @@ header {
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 30px;
-  justify-items: center;
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: auto;
+  margin: 5px;
 }
 
 .grid-item {
