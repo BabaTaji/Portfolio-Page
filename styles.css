@@ -55,6 +55,8 @@ header {
   background-color: #342056;
   color: white;
   padding: 50px;
+  overflow: auto;
+  width: 100%;
 }
 
 .project-tile {
