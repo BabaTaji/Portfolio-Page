@@ -1,77 +1,113 @@
+
+
 * {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #639cd9;
-  font-family: Montserrat, sans-serif;
-  margin: 0;
-}
-
-header {
+    box-sizing: box-border;
+   }
+#navbar {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1;
-}
+  }
 
-#navbar {
-  background-color: #f9f9f9;
-  overflow: hidden;
-}
 
-#navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: right;
-}
 
-#navbar li {
-  display: inline-block;
-}
-
-#navbar a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-}
-
-#navbar a:hover {
-  background-color: #ddd;
-}
-
-#welcome-section {
+ 
+  
+  body {
+    background-color: #639cd9;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    
+   }
+  
+  
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+  }
+  li {
+    float: right;
+    }
+  
+  li a {
+    display: block;
+    padding: 5px 10px;
+    font-size: x-large;
+    font-family: montserrat;
+    color: black;
+    text-decoration: none;
+  }
+  
+ #welcome-section {
   background-color: #5454c5;
-  color: white;
-  text-align: center;
-  padding: 50px;
-}
-
-#projects {
-  background-color: #342056;
-  color: white;
-  padding: 50px;
-  overflow: auto;
-  width: 100%;
-}
-
-.project-tile {
+    
+text-align: center;
+    font-size: x-large;
+    font-family: Courier New;
+    overflow: hidden; 
+    
+    
+  }   
+  
+  #projects {
+    background-color: #342056;
+    text-align: center;
+    font-size: x-large;
+    font-family: Courier New;
+    font-weight: bold;
+    
+    width: 100%
+  }
+  
+  h2 {
+    text-decoration: none;
+  }
+  
+  #CTA {
+  
+    background-color: #5454c5;
+    text-align: center;
+    font-size: x-large;
+    font-family: Courier New;
+    font-weight: bold;
+    height: 20%;
+  }
+  
+  footer {
+    height: 20%;
+    text-decoration: none;
+    font-family: montserrat;
+    text-align: center;
+    
+  }
+ 
+@media screen and (max-width: 768px) {
+  #navbar {
+    position: relative;
+  }
+   
+.project-tile  {
   animation-name: projects;
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
 
 @keyframes projects {
-  0% {background-color: #2196F3;}
-  25% {background-color: #5454c5;}
-  50% {background-color: #342056;}
+  0%   {background-color: #2196F3;}
+  25%   {background-color: #5454c5;}
+  50%  {background-color: #342056;}
 }
-
-.grid-container {
+  
+  div {
+    border: 2px solid #342056;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -80,61 +116,27 @@ header {
     grid-gap: 15px
     
   }
-
-.grid-item {
-  border: 2px solid white;
-  padding: 20px;
-  text-align: center;
-}
-
-.grid-item img {
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    overflow: hidden;
+    
+    
+  }
+  
+  img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
-}
+  }
 
-#CTA {
-  background-color: #5454c5;
-  color: white;
-  text-align: center;
-  padding: 50px;
-}
-
-footer {
-  background-color: #f9f9f9;
-  color: black;
-  text-align: center;
-  padding: 50px;
-}
-
-@media screen and (max-width: 768px) {
-  #navbar {
-    position: relative;
+  #CTA, footer  {
+    overflow: hidden;
+    bottom: 0px;
   }
+    
+    
+    
   
-  #navbar ul {
-    display: none;
-  }
-  
-  #navbar li {
-    display: block;
-    text-align: center;
-  }
-  
-  #navbar li a {
-    border-bottom: 1px solid white;
-  }
-  
-  #navbar.show ul {
-    display: block;
-  }
-  
-  #welcome-section, #projects, #CTA, footer {
-    padding: 30px;
-  }
-  
-  .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
-  }
-}
