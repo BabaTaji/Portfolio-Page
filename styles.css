@@ -1,5 +1,4 @@
 
-
 * {
     box-sizing: box-border;
    }
@@ -83,10 +82,9 @@ text-align: center;
     text-align: center;
     
   }
- 
-@media screen and (max-width: 768px) {
-  #navbar {
-    position: relative;
+  @media screen and (min-width: 480px) {
+    #leftsidebar {width: 200px; float: left;}
+    #main {margin-left: 216px;}
   }
    
 .project-tile  {
@@ -126,11 +124,11 @@ text-align: center;
     
   }
   
-  .grid-item img {
+  img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
-}
+  }
 
   #CTA, footer  {
     overflow: hidden;
